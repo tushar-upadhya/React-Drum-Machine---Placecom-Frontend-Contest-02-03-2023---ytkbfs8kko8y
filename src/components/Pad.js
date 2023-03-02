@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { bank1 } from "./App";
 
 function Pad({ handleClick, power, backgroundStyle, element, id }) {
@@ -10,6 +10,7 @@ function Pad({ handleClick, power, backgroundStyle, element, id }) {
             audio.play();
         }
     });
+
     return (
         <button
             data-tag={id}
